@@ -106,10 +106,10 @@ Use when: Emphasizing words.
 
 Use when: Listing points.
 
-6. Numbered List
-1. Step one
-2. Step two
-3. Step three
+1. Numbered List
+2. Step one
+3. Step two
+4. Step three
 
 
 Use when: Procedures, instructions.
@@ -525,3 +525,29 @@ git tag v1.0
 git tag -a v1.0 -m "Version 1"
 git push origin v1.0
 
+# GIT BRANCHING 
+
+How Branching Works (Practical Example)
+Step 1 — Check branches
+git branch
+
+Step 2 — Create a branch
+git branch login-feature
+
+Step 3 — Switch to it
+git checkout login-feature
+
+Step 4 — Do your work, commit
+git add .
+git commit -m "Added login feature"
+
+Step 5 — Push to GitHub
+git push origin login-feature
+
+Step 6 — Create Pull Request (PR) on GitHub
+
+A PR lets others review and approve your code.
+
+Step 7 — Merge into main
+
+Click Merge on GitHub after approval.
