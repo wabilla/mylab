@@ -38,3 +38,4 @@ for x in items:
 Hidden content here. for the class
 
 </details>
+### Using class
