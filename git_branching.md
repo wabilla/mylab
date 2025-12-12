@@ -406,3 +406,193 @@ git show --name-only	List changed files only
 git show --stat	Summary of changes
 git show <hash> -- <file>	Show changes for a specific file
 
+
+# TERMS
+Key GitHub Terms: Definitions, When to Use Them & How to Use Them
+1️⃣ Repository (Repo)
+What it is
+
+A repository is a storage space on GitHub where your project files, code, documentation, and version history are kept.
+
+When to use it
+
+When starting a project
+
+When storing code online
+
+When collaborating with others
+
+How to use it
+
+Create a repo on GitHub
+
+Clone it to your computer using:
+
+git clone <repo-url>
+
+
+Add/commit/push code.
+
+2️⃣ Branch
+What it is
+
+A branch is a separate version of your code where you can make changes without affecting the main project.
+
+When to use it
+
+Adding new features
+
+Fixing bugs
+
+Testing new ideas safely
+
+How to use it
+git checkout -b feature-branch
+
+
+After changes:
+
+git add .
+git commit -m "new feature"
+git push origin feature-branch
+
+3️⃣ Commit
+What it is
+
+A commit is a saved snapshot of your project at a specific point in time.
+
+When to use it
+
+After completing a task
+
+When fixing a bug
+
+When making any logical change
+
+How to use it
+git add .
+git commit -m "Describe what you changed"
+
+4️⃣ Push
+What it is
+
+Push sends your local commits to GitHub (remote repo).
+
+When to use it
+
+When you want your changes uploaded
+
+When collaborating with others
+
+How to use it
+git push origin branch-name
+
+5️⃣ Pull
+What it is
+
+Pull updates your local repository with the newest changes from GitHub.
+
+When to use it
+
+Before starting work each day
+
+After someone merges a PR
+
+When your repo is behind
+
+How to use it
+git pull origin main
+
+6️⃣ Fork
+What it is
+
+A fork is your personal copy of someone else’s repository.
+
+When to use it
+
+Contributing to open-source
+
+You cannot push directly to the original repo
+
+How to use it
+
+Click Fork on GitHub
+
+Clone your fork
+
+Make changes and then submit PRs
+
+7️⃣ Pull Request (PR)
+What it is
+
+A request asking the project owner to review and merge your changes.
+
+When to use it
+
+When your branch or fork is ready to be merged
+
+When contributing to a project
+
+How to use it
+
+Push your branch
+
+Click New Pull Request
+
+Describe the changes
+
+Submit PR
+
+8️⃣ Merge
+What it is
+
+Combining changes from one branch into another (usually feature → main).
+
+When to use it
+
+When PR is approved
+
+After successful review
+
+How to use it
+
+On GitHub:
+
+Open PR
+
+Click Merge Pull Request
+
+Or using Git:
+
+git merge feature-branch
+
+9️⃣ GitHub Issues
+What it is
+
+A tracking system used to report bugs, propose features, or manage tasks.
+
+When to use it
+
+You find a bug
+
+You want to request an improvement
+
+You want to assign tasks to team members
+
+How to use it
+
+Go to Issues → New Issue
+Add title, description, labels, assignee.
+
+
+
+# PUSHING YOUR WORK
+Start locally first, then create GitHub repo
+
+If your project was already started locally:
+
+Step 1: Create an empty repo on GitHub (no README)
+Step 2: Connect and push:
+git remote add origin https://github.com/username/repo.git
+git branch -M main
+git push -u origin main
